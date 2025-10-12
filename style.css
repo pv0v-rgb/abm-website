@@ -1,0 +1,219 @@
+:root {
+  --bg: #ffffff; /* page background */
+  --text: #0b1220; /* main text */
+  --accent: #0066cc; /* primary color */
+  --muted: #6b7280; /* secondary text */
+  --card: #f8fafc; /* card background */
+}
+
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0 }
+html, body { height: 100% }
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* Layout */
+.container { max-width: 1000px; margin: 0 auto; padding: 24px }
+header { border-bottom: 1px solid #FFD700; padding: 12px 0; margin-bottom: 18px }
+nav { display: flex; align-items: center; justify-content: space-between; gap: 12px }
+.brand { font-weight: 700 }
+.nav-links { display: flex; gap: 12px }
+.nav-links a { color: var(--text); text-decoration: none; padding: 6px 10px; border-radius: 8px }
+.nav-links a:hover { background: var(--card) }
+
+/* Hero / Home */
+.hero { padding: 28px 0 }
+.hero h1 { font-size: 28px; margin-bottom: 8px }
+.hero p { color: var(--muted) }
+
+/* Grid for sections */
+section { margin: 18px 0 }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px }
+.card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #FFD700; /* gold border */
+}
+
+/* Footer */
+footer { padding: 18px 0; color: var(--muted); font-size: 14px; border-top: 1px solid #eef2f6; margin-top: 28px }
+
+/* Small screens */
+@media (max-width:600px) {
+  .nav-links { display: none }
+  .mobile-toggle { display: inline-block }
+}
+.mobile-toggle { display: none; background: transparent; border: 0; font-size: 18px }
+.mobile-menu { display: none; padding-top: 8px }
+.mobile-menu a { display: block; padding: 8px 0; color: var(--text); text-decoration: none }
+.show { display: block }
+
+/* Utilities */
+.muted { color: var(--muted) }
+.center { text-align: center }
+
+.officer-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.nav-links a.active {
+  background: var(--card);
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+/* Grid for sections */
+section { margin: 18px 0 }
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 12px 
+}
+.card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #FFD700; /* gold border */
+}
+
+/* Officers page: stacked boxes */
+#officers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#officers-list .card {
+  width: 100%;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.officer-img {
+  width: 150px;           /* set a fixed width for consistency */
+  height: 150px;          /* make them square */
+  object-fit: cover;      /* crops the image instead of squishing it */
+  border-radius: 50%;     /* makes it circular (profile style) */
+  margin-right: 15px;     /* space between image and text */
+}
+
+.officer-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;    /* round image */
+  flex-shrink: 0;        /* prevents the image from squishing */
+.adviser-pics .officer-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+  
+}
+
+/* Officer card layout */
+.officer-card {
+  display: flex;
+  align-items: center;   /* centers image + text vertically */
+  gap: 20px;             /* space between photo and text */
+  padding: 15px;
+
+}
+
+.officer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Event cards layout */
+.event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.event-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Event section layout */
+.event-section {
+  margin-bottom: 40px;
+}
+
+.event-section h2 {
+  margin-bottom: 8px;
+}
+
+.event-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Big stacked event cards (like officers) */
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Convocation photo grid */
+#convocation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+#convocation .event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card);
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+#convocation .event-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;     /* crops neatly instead of squishing */
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+}
+
+.adviser-pics {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+

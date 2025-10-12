@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classroom Site — Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">ABM 11 — Aristotle</div>
+        <div>
+          <button class="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="officers.html">Officers</a>
+            <a href="events.html" class="active">Events</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ARAT BANAT -->
+    <section class="event-section">
+      <h2>ARAT BANAT — ABM Day</h2>
+      <p class="muted">A day full of competitions, performances, and fun celebrating ABM unity.</p>
+      <div id="aratbanat" class="event-gallery">
+        <article class="card event-card">
+          <img src="images/aratbanat1.jpg" alt="ABM Day " class="event-img">
+          <p class="muted">ABM Day opening program</p>
+        </article>
+        <!-- Add more as needed -->
+      </div>
+    </section>
+
+    <!-- TEACHERS' DAY -->
+    <section class="event-section">
+      <h2>Teachers' Day</h2>
+      <p class="muted">Celebrating our beloved teachers for their dedication and love.</p>
+      <div id="teachersday" class="event-gallery">
+        <article class="card event-card">
+          <img src="images/teachersday1.jpg" alt="Teachers Day 1" class="event-img">
+          <p class="muted">Gift-giving and appreciation program</p>
+        </article>
+        <!-- Add more photos here -->
+      </div>
+    </section>
+
+    <!-- CONVOCATION DAY -->
+    <section class="event-section">
+      <h2>Convocation Day</h2>
+      <p class="muted">Honoring our 16 outstanding honor students and their hard work.</p>
+      <div id="convocation" class="event-gallery">
+        <article class="card event-card">
+          <img src="images_convocation/images_convocation1.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 1</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation2.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 2</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation3.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 3</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation4.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 4</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation5.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 5</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation6.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 6</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation7.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 7</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation8.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 8</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation9.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 9</p>
+        </article><article class="card event-card">
+          <img src="images_convocation/images_convocation10.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 10</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation11.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 11</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation12.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 12</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation13.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 13</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation14.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 14</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation15.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 15</p>
+        </article>
+		<article class="card event-card">
+          <img src="images_convocation/images_convocation16.jpg" alt="Convocation Awardee XX" class="event-img">
+          <p class="muted">Honor Student 16</p>
+        </article>
+       
+        <!-- Continue adding up to 16 -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container center">
+    <small>&copy; <span id="year"></span> ABM 11 — Aristotle</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

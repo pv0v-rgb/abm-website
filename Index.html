@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">ABM 11 - Aristotle</div>
+        <div>
+          <button class="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+          <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="officers.html">Officers</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h1>Welcome</h1>
+      <p class="muted">A space for your class announcements and details.</p>
+    </section>
+  </main>
+
+  <footer class="container center">
+    <small>&copy; <span id="year"></span> YourClass</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
