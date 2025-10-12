@@ -148,6 +148,14 @@ section { margin: 18px 0 }
 }
 
 .event-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.event-img {
   width: 100%;           /* make it fill the card nicely */
   max-width: 500px;      /* limit the width so it’s not too huge */
   height: auto;          /* keep the aspect ratio */
@@ -155,6 +163,7 @@ section { margin: 18px 0 }
   display: block;        /* removes weird gaps */
   margin: 0 auto;        /* centers the image */
 }
+
 
 /* Event section layout */
 .event-section {
