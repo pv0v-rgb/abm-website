@@ -139,19 +139,25 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 <script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel img');
+document.addEventListener("DOMContentLoaded", function() {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel img');
 
-function changeSlide(direction) {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
-  slides[currentSlide].classList.add('active');
-}
+  function showSlide(index) {
+    slides.forEach(img => img.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+
+  window.changeSlide = function(direction) {
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    showSlide(currentSlide);
+  };
+});
 </script>
-
 
 </body>
 </html>
+
 
 
 
