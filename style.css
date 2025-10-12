@@ -194,7 +194,7 @@ section { margin: 18px 0 }
 /* Convocation photo grid */
 #convocation {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
 }
 
@@ -275,6 +275,7 @@ section { margin: 18px 0 }
 .carousel .next {
   right: 10px;
 }
+
 
 
 
