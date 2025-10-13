@@ -3,22 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Classroom Site — Officers</title>
+  <title>ABM 11 — Officers</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div class="container">
       <nav>
         <div class="brand">ABM 11 - Aristotle</div>
-        <div>
-          <button class="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu">☰</button>
-          <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="officers.html" class="active">Officers</a>
-            <a href="events.html">Events</a>
-          </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="officers.html" class="active">Officers</a>
+          <a href="events.html">Events</a>
         </div>
       </nav>
     </div>
@@ -27,141 +25,103 @@
   <main class="container">
     <section id="officers">
       <h2>Classroom Officers</h2>
-      <p class="muted">Meet our classroom officers.</p>
-      <div class="grid" id="officers-list">
-	  
-<article class="card advisers-card">
-  <div class="adviser-pics">
-    <img src="adviser.jpg" alt="Room Adviser 1" class="officer-img">
-    <img src="adviser1.jpg" alt="Room Adviser 2" class="officer-img">
-  </div>
-  <h3>Room Advisers</h3>
-  <p class="muted">Name: Adviser 1 </p>
-  <p class="muted">Name: Co-Adviser </p>
-</article>
-  
-	  
-        <article class="card officer-card">
-  <img src="president.jpg" alt="President" class="officer-img">
-  <div class="officer-info">
-    <h3>President</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
+      <p class="muted">Meet our classroom officers and advisers.</p>
+      <div id="officers-list">
 
+        <!-- Room Advisers -->
+        <article class="card advisers-card">
+          <div class="adviser-pics">
+            <img src="adviser.jpg" alt="Room Adviser 1" class="officer-img">
+            <img src="adviser1.jpg" alt="Room Adviser 2" class="officer-img">
+          </div>
+          <h3>Room Advisers</h3>
+          <p class="muted">Name: Adviser 1</p>
+          <p class="muted">Name: Co-Adviser</p>
+        </article>
+
+        <!-- Officers -->
+        <article class="card officer-card">
+          <img src="president.jpg" alt="President" class="officer-img">
+          <h3>President</h3>
+          <p class="muted">Name:</p>
+        </article>
 
         <article class="card officer-card">
-  <img src="vp.jpg" alt="Vice President" class="officer-img">
-  <div class="officer-info">
-    <h3>Vice President</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="secretary.jpg" alt="Secretary" class="officer-img">
-  <div class="officer-info">
-    <h3>Secretary</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
+          <img src="vp.jpg" alt="Vice President" class="officer-img">
+          <h3>Vice President</h3>
+          <p class="muted">Name:</p>
+        </article>
 
         <article class="card officer-card">
-  <img src="treasurer.jpg" alt="Treasurer" class="officer-img">
-  <div class="officer-info">
-    <h3>Treasurer</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="auditor.jpg" alt="Auditor" class="officer-img">
-  <div class="officer-info">
-    <h3>Auditor</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
+          <img src="secretary.jpg" alt="Secretary" class="officer-img">
+          <h3>Secretary</h3>
+          <p class="muted">Name:</p>
+        </article>
 
         <article class="card officer-card">
-  <img src="pio.jpg" alt="PIO" class="officer-img">
-  <div class="officer-info">
-    <h3>PIO</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="bm1.jpg" alt="Business Manager 1" class="officer-img">
-  <div class="officer-info">
-    <h3>Business Manager 1</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="bm2.jpg" alt="Business Manager 2" class="officer-img">
-  <div class="officer-info">
-    <h3>Business Manager 2</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="po1.jpg" alt="Protocol Officer 1" class="officer-img">
-  <div class="officer-info">
-    <h3>Protocol Officer 1</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="po2.jpg" alt="Protocol Officer 2" class="officer-img">
-  <div class="officer-info">
-    <h3>Protocol Officer 2</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="representative1.jpg" alt="Representative 1" class="officer-img">
-  <div class="officer-info">
-    <h3>Representative 1</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
-		
-		<article class="card officer-card">
-  <img src="representative2.jpg" alt="Representative 2" class="officer-img">
-  <div class="officer-info">
-    <h3>Representative 2</h3>
-    <p class="muted">Name: </p>
-  </div>
-</article>
+          <img src="treasurer.jpg" alt="Treasurer" class="officer-img">
+          <h3>Treasurer</h3>
+          <p class="muted">Name:</p>
+        </article>
 
-        <!-- Copy and Paste -->
+        <article class="card officer-card">
+          <img src="auditor.jpg" alt="Auditor" class="officer-img">
+          <h3>Auditor</h3>
+          <p class="muted">Name:</p>
+        </article>
+
+        <article class="card officer-card">
+          <img src="pio.jpg" alt="PIO" class="officer-img">
+          <h3>PIO</h3>
+          <p class="muted">Name:</p>
+        </article>
+
+        <article class="card officer-card">
+          <img src="bm1.jpg" alt="Business Manager 1" class="officer-img">
+          <h3>Business Manager 1</h3>
+          <p class="muted">Name:</p>
+        </article>
+
+        <article class="card officer-card">
+          <img src="bm2.jpg" alt="Business Manager 2" class="officer-img">
+          <h3>Business Manager 2</h3>
+          <p class="muted">Name:</p>
+        </article>
+
+        <article class="card officer-card">
+          <img src="po1.jpg" alt="Protocol Officer 1" class="officer-img">
+          <h3>Protocol Officer 1</h3>
+          <p class="muted">Name:</p>
+        </article>
+
+        <article class="card officer-card">
+          <img src="po2.jpg" alt="Protocol Officer 2" class="officer-img">
+          <h3>Protocol Officer 2</h3>
+          <p class="muted">Name:</p>
+        </article>
+
+        <article class="card officer-card">
+          <img src="representative1.jpg" alt="Representative 1" class="officer-img">
+          <h3>Representative 1</h3>
+          <p class="muted">Name:</p>
+        </article>
+
+        <article class="card officer-card">
+          <img src="representative2.jpg" alt="Representative 2" class="officer-img">
+          <h3>Representative 2</h3>
+          <p class="muted">Name:</p>
+        </article>
+
       </div>
     </section>
   </main>
 
   <footer class="container center">
-    <small>&copy; <span id="year"></span> YourClass</small>
+    <small>&copy; <span id="year"></span> ABM 11 - Aristotle</small>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".mobile-toggle");
-    const menu = document.querySelector(".mobile-menu");
-
-    toggle.addEventListener("click", () => {
-      menu.classList.toggle("show");
-    });
-  });
-  </script>
 </body>
-</html>z
-
-
+</html>
