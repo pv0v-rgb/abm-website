@@ -219,7 +219,39 @@ h2 {
   }
 }
 
+/* === Hero Section (Homepage) === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 80px 20px;
+  border-radius: 12px;
+  color: #0b1220;
+  background: linear-gradient(135deg, #ffe680, #fbb3ff); /* gold → pink gradient */
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
+.hero-logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #FFD700;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
 
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 
-
+.hero-content p {
+  color: #444;
+  max-width: 500px;
+  font-size: 1rem;
+}
