@@ -8,6 +8,10 @@
   --gold: #FFD700;
 }
 
+:root {
+  --gradient: linear-gradient(135deg, #ffe680, #fbb3ff);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -85,12 +89,13 @@ h2 {
   gap: 20px;
 }
 
-.card {
-  background: var(--card);
-  border: 2px solid var(--gold);
+#officers-list .card {
+  width: 100%;
+  background: linear-gradient(135deg, #ffe680, #fbb3ff);
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 16px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* Officer Images */
@@ -211,6 +216,14 @@ h2 {
   justify-items: center;
 }
 
+.event-card {
+  background: linear-gradient(135deg, #ffe680, #fbb3ff);
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
 @media (max-width: 768px) {
   #convocation {
     grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
@@ -261,4 +274,22 @@ h2 {
   max-width: 500px;
   font-size: 1rem;
 }
+
+.adviser-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* so it adjusts nicely on mobile */
+}
+
+.adviser-pics .officer-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+}
+
+
 
