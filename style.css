@@ -16,10 +16,14 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
   color: var(--text);
-  background: var(--bg);
-  line-height: 1.6;
+  background: linear-gradient(135deg, #ffe680, #fbb3ff);
+  background-attachment: fixed; /* keeps the gradient steady */
+  background-size: cover;
+  min-height: 100vh;
 }
+
 
 /* === Navbar === */
 header {
@@ -229,11 +233,13 @@ h2 {
   padding: 80px 20px;
   border-radius: 12px;
   color: #0b1220;
-  background: linear-gradient(135deg, #ffe680, #fbb3ff); /* gold → pink gradient */
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0.3); /* semi-transparent overlay */
+  backdrop-filter: blur(10px); /* smooth glass effect */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 700px;
 }
+
 
 .hero-logo {
   width: 140px;
@@ -255,3 +261,4 @@ h2 {
   max-width: 500px;
   font-size: 1rem;
 }
+
