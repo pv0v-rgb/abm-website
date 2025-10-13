@@ -317,3 +317,16 @@ h2 {
   }
 }
 
+/* TEMP FIX — keep navbar visible on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mobile-toggle {
+    display: none !important; /* hides the ☰ button */
+  }
+}
