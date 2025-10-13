@@ -13,50 +13,24 @@
     <div class="container">
       <nav>
         <div class="brand">ABM 11 - Aristotle</div>
-        <div>
-          <button class="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu">☰</button>
-          <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="officers.html">Officers</a>
-            <a href="events.html">Events</a>
-          </div>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="officers.html">Officers</a>
+          <a href="events.html">Events</a>
         </div>
       </nav>
     </div>
   </header>
 
   <main class="container">
-<section id="home" class="hero">
-  <div class="hero-content">
-    <img src="logo_abm.jpg" alt="ABM Logo" class="hero-logo">
-    <h1>Welcome to ABM 11 – Aristotle</h1>
-    <p class="muted">A glimpse into our class, our officers, and our achievements.</p>
-  </div>
-</section>
-
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img src="logo_abm.jpg" alt="ABM Logo" class="hero-logo">
+        <h1>Welcome to ABM 11 – Aristotle</h1>
+        <p class="muted">A glimpse into our class, our officers, and our achievements.</p>
+      </div>
+    </section>
   </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
-   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".mobile-toggle");
-    const menu = document.querySelector(".mobile-menu");
-
-    toggle.addEventListener("click", () => {
-      menu.classList.toggle("show");
-    });
-  });
-  </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
