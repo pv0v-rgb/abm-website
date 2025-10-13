@@ -1,222 +1,142 @@
+/* === Global Colors and Fonts === */
 :root {
-  --bg: #ffffff; /* page background */
-  --text: #0b1220; /* main text */
-  --accent: #0066cc; /* primary color */
-  --muted: #6b7280; /* secondary text */
-  --card: #f8fafc; /* card background */
+  --bg: #ffffff;
+  --text: #0b1220;
+  --accent: #0066cc;
+  --muted: #6b7280;
+  --card: #f8fafc;
+  --gold: #FFD700;
 }
 
-/* Reset */
-* { box-sizing: border-box; margin: 0; padding: 0 }
-html, body { height: 100% }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
   color: var(--text);
   background: var(--bg);
+  line-height: 1.6;
 }
 
-/* Layout */
-.container { max-width: 1000px; margin: 0 auto; padding: 24px }
-header { border-bottom: 1px solid #FFD700; padding: 12px 0; margin-bottom: 18px }
-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px }
-.brand { font-weight: 700 }
-.nav-links { display: flex; gap: 12px }
-.nav-links a { color: var(--text); text-decoration: none; padding: 6px 10px; border-radius: 8px }
-.nav-links a:hover { background: var(--card) }
-
-/* Hero / Home */
-.hero { padding: 28px 0 }
-.hero h1 { font-size: 28px; margin-bottom: 8px }
-.hero p { color: var(--muted) }
-
-/* Grid for sections */
-section { margin: 18px 0 }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px }
-.card {
-  background: var(--card);
-  padding: 14px;
-  border-radius: 10px;
-  border: 1px solid #FFD700; /* gold border */
+/* === Navbar === */
+header {
+  border-bottom: 2px solid var(--gold);
+  padding: 16px 0;
 }
 
-/* Footer */
-footer { padding: 18px 0; color: var(--muted); font-size: 14px; border-top: 1px solid #eef2f6; margin-top: 28px }
-
-/* Small screens */
-@media (max-width:600px) {
-  .nav-links { display: none }
-  .mobile-toggle { display: inline-block }
-}
-.mobile-toggle { display: none; background: transparent; border: 0; font-size: 18px }
-.mobile-menu { display: none; padding-top: 8px }
-.mobile-menu a { display: block; padding: 8px 0; color: var(--text); text-decoration: none }
-.show { display: block }
-
-/* Utilities */
-.muted { color: var(--muted) }
-.center { text-align: center }
-
-.officer-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.nav-links a.active {
-  background: var(--card);
-  font-weight: 700;
-  transition: background 0.3s ease;
-}
-
-/* Grid for sections */
-section { margin: 18px 0 }
-.grid { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-  gap: 12px 
-}
-.card {
-  background: var(--card);
-  padding: 14px;
-  border-radius: 10px;
-  border: 1px solid #FFD700; /* gold border */
-}
-
-/* Officers page: stacked boxes */
-#officers-list {
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
   gap: 16px;
 }
 
-#officers-list .card {
-  width: 100%;
-  background: var(--card);
-  padding: 20px;
-  border-radius: 12px;
-  border: 2px solid #FFD700;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.officer-img {
-  width: 150px;           /* set a fixed width for consistency */
-  height: 150px;          /* make them square */
-  object-fit: cover;      /* crops the image instead of squishing it */
-  border-radius: 50%;     /* makes it circular (profile style) */
-  margin-right: 15px;     /* space between image and text */
-}
-
-.officer-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;    /* round image */
-  flex-shrink: 0;        /* prevents the image from squishing */
-.adviser-pics .officer-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-  
-
-/* Officer card layout */
-.officer-card {
-  display: flex;
-  align-items: center;   /* centers image + text vertically */
-  gap: 20px;             /* space between photo and text */
-  padding: 15px;
-
-}
-
-.officer-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Event cards layout */
-.event-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.event-img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 6px 12px;
   border-radius: 8px;
-  margin-bottom: 10px;
+  transition: 0.3s;
 }
 
-/* Event section layout */
-.event-section {
-  margin-bottom: 40px;
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--card);
+  font-weight: 700;
 }
 
-.event-section h2 {
+/* === Sections === */
+section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h2 {
   margin-bottom: 8px;
 }
 
-.event-gallery {
+.muted {
+  color: var(--muted);
+}
+
+/* === Officer Cards === */
+#officers-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Big stacked event cards (like officers) */
-.event-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* centers content horizontally */
-  justify-content: center; /* centers content vertically if needed */
-  text-align: center;
-  padding: 14px;
-  box-sizing: border-box;
-}
-
-/* Convocation photo grid */
-#convocation {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-
-#convocation .event-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card {
   background: var(--card);
-  border: 2px solid #FFD700;
+  border: 2px solid var(--gold);
   border-radius: 12px;
-  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+/* Officer Images */
+.officer-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px auto;
+}
+
+/* === Event Cards === */
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.event-card {
+  background: var(--card);
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  text-align: center;
+  padding: 16px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .event-img {
-  width: 90%;             /* slightly smaller than full width for equal spacing */
-  max-width: 300px;       /* optional: keeps it from being too wide */
-  height: 300px;          /* adjust height as needed */
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === Convocation Section === */
+#convocation .event-img {
+  width: 90%;
+  max-width: 260px;
+  height: 260px;
   object-fit: cover;
   border-radius: 12px;
-  margin: 0 auto;         /* forces horizontal centering */
+  margin: 0 auto;
   display: block;
 }
 
-}
-
-.adviser-pics {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-/* Carousel container */
+/* === Carousel === */
 .carousel {
   position: relative;
   width: 100%;
@@ -226,7 +146,6 @@ section { margin: 18px 0 }
   border-radius: 12px;
 }
 
-/* Hide all images by default */
 .carousel img {
   display: none;
   width: 100%;
@@ -235,12 +154,10 @@ section { margin: 18px 0 }
   border-radius: 10px;
 }
 
-/* Show the active image */
 .carousel img.active {
   display: block;
 }
 
-/* Next & previous buttons */
 .carousel button {
   position: absolute;
   top: 50%;
@@ -252,39 +169,33 @@ section { margin: 18px 0 }
   cursor: pointer;
   border-radius: 5px;
   font-size: 18px;
-  transition: background-color 0.3s;
 }
 
 .carousel button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.carousel .prev {
-  left: 10px;
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+/* === Mobile Responsiveness === */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .officer-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .event-img {
+    height: 220px;
+  }
 }
-
-.carousel .next {
-  right: 10px;
-}
-
-.event-img {
-  width: 100%;
-  height: 300px; /* adjust height as needed */
-  object-fit: cover; /* ensures image fills the area properly */
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px; /* optional: soft corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.event-card {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-
-
-
