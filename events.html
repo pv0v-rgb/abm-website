@@ -45,16 +45,21 @@
 
     <!-- TEACHERS' DAY -->
     <section class="event-section">
-      <h2>Teachers' Day</h2>
-      <p class="muted">Celebrating our beloved teachers for their dedication and love.</p>
-      <div id="teachersday" class="event-gallery">
-        <article class="card event-card">
-          <img src="images/teachersday1.jpg" alt="Teachers Day 1" class="event-img">
-          <p class="muted">Gift-giving and appreciation program</p>
-        </article>
-        <!-- Add more photos here -->
-      </div>
-    </section>
+  <h2>Teachers' Day</h2>
+  <p class="muted">A celebration to honor our beloved teachers and their dedication.</p>
+
+  <div class="carousel card event-card">
+    <img src="teachers_day1.jpg" alt="Teachers Day 1" class="event-img active">
+    <img src="teachers_day2.jpg" alt="Teachers Day 2" class="event-img">
+    <img src="teachers_day3.jpg" alt="Teachers Day 3" class="event-img">
+    <img src="teachers_day4.jpg" alt="Teachers Day 4" class="event-img">
+    <img src="teachers_day5.jpg" alt="Teachers Day 5" class="event-img">
+    <img src="teachers_day6.jpg" alt="Teachers Day 6" class="event-img">
+
+    <button class="prev" onclick="changeTeacherSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeTeacherSlide(1)">&#10095;</button>
+  </div>
+</section>
 
     <!-- CONVOCATION DAY -->
     <section class="event-section">
@@ -157,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+
 
 
 
