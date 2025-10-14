@@ -17,14 +17,20 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
+  font-family: 'Crimson Text', serif;
+  line-height: 1.6;
   color: var(--text);
-  background: var(--gradient);
+  background: linear-gradient(135deg, #ffe680, #fbb3ff);
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
 }
+
+h1, h2, h3, .brand {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5px;
+}
+
 
 /* === Navbar === */
 header {
@@ -332,4 +338,5 @@ h2 {
     display: none !important; /* hides the ☰ button */
   }
 }
+
 
