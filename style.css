@@ -304,8 +304,10 @@ h2 {
 
 @media (max-width: 480px) {
   #convocation {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on phones */
+    gap: 12px;
   }
+}
 
   .hero {
     padding: 50px 16px;
@@ -330,3 +332,4 @@ h2 {
     display: none !important; /* hides the ☰ button */
   }
 }
+
