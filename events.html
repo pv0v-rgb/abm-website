@@ -166,6 +166,40 @@
     function showRecitalSlide2(i){recitalSlides2.forEach(img=>img.classList.remove("active"));recitalSlides2[i].classList.add("active");}
     window.changeRecitalSlide2=function(d){recitalIndex2=(recitalIndex2+d+recitalSlides2.length)%recitalSlides2.length;showRecitalSlide2(recitalIndex2);};
   </script>
+
+  <!-- Entrepreneurship Recital Carousel Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // === Row 1 (entrep_recital1–16) ===
+  let recitalIndex1 = 0;
+  const recitalSlides1 = document.querySelectorAll(".event-section:nth-of-type(4) .carousel:nth-of-type(1) img");
+
+  function showRecitalSlide1(index) {
+    recitalSlides1.forEach(img => img.classList.remove("active"));
+    recitalSlides1[index].classList.add("active");
+  }
+
+  window.changeRecitalSlide = function(direction) {
+    recitalIndex1 = (recitalIndex1 + direction + recitalSlides1.length) % recitalSlides1.length;
+    showRecitalSlide1(recitalIndex1);
+  };
+
+  // === Row 2 (entrep_recital17–32) ===
+  let recitalIndex2 = 0;
+  const recitalSlides2 = document.querySelectorAll(".event-section:nth-of-type(4) .carousel:nth-of-type(2) img");
+
+  function showRecitalSlide2(index) {
+    recitalSlides2.forEach(img => img.classList.remove("active"));
+    recitalSlides2[index].classList.add("active");
+  }
+
+  window.changeRecitalSlide2 = function(direction) {
+    recitalIndex2 = (recitalIndex2 + direction + recitalSlides2.length) % recitalSlides2.length;
+    showRecitalSlide2(recitalIndex2);
+  };
+});
+</script>
+
 </body>
 </html>
 
